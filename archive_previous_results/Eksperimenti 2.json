@@ -1,0 +1,36 @@
+{
+  "run_count": 10429,
+  "duration_seconds": 3.523753,
+  "status": "Verified",
+  "atheris_version": "3.1.0",
+  "python_version": "3.12.3",
+  "seed": 1,
+  "run_limit_per_version": 10000,
+  "results": [
+    {
+      "version": "buggy",
+      "runs": 429,
+      "duration_seconds": 1.200009,
+      "exit_code": 77,
+      "log": "experiment_2/run-qqfdh05m/atheris-buggy.log",
+      "artifact": "experiment_2/run-qqfdh05m/crash-buggy.bin",
+      "status": "Error reproduced"
+    },
+    {
+      "version": "fixed",
+      "runs": 10000,
+      "duration_seconds": 2.323744,
+      "exit_code": 0,
+      "log": "experiment_2/run-qqfdh05m/atheris-fixed.log",
+      "artifact": null,
+      "status": "Passed fuzz testing"
+    }
+  ],
+  "replay_log": "experiment_2/run-qqfdh05m/replay.log",
+  "replay": {
+    "items": 3,
+    "actual": 3,
+    "expected": 4,
+    "fixed": 4
+  }
+}

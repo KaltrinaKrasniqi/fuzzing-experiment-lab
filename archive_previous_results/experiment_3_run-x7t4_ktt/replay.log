@@ -1,0 +1,8 @@
+Input hex: 0a
+buggy: exit_code=23; sanitizer_error=True; verified=True
+--- sanitizer excerpt ---
+==1907==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5020000000da at pc 0x55ea4b1a0561 bp 0x7ffdc7a50660 sp 0x7ffdc7a50658
+SUMMARY: AddressSanitizer: heap-buffer-overflow /mnt/data/fuzzing_memory_revision/Fuzzing_Lab_Projekti_i_Plote_4_Eksperimente/dhurata/experiment_3/memory_3.cpp:12:44 in LLVMFuzzerTestOneInput
+fixed: exit_code=0; sanitizer_error=False; verified=True
+--- sanitizer excerpt ---
+

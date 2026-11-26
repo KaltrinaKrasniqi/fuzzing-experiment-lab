@@ -1,0 +1,3 @@
+Input: b'\x03' (1 bytes), artikuj=3
+Buggy: 3 pikë, pritej 4
+Fixed: 4 pikë, pritej 4

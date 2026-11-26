@@ -1,0 +1,3 @@
+Input hex: b4e0
+buggy: exit=77, sanitizer_detected=True, replay_verified=True
+fixed: exit=0, sanitizer_detected=False, replay_verified=True

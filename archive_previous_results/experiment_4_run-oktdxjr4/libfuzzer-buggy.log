@@ -1,0 +1,45 @@
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 1
+INFO: Loaded 1 modules   (4 inline 8-bit counters): 4 [0x562c58b5afd8, 0x562c58b5afdc), 
+INFO: Loaded 1 PC tables (4 PCs): 4 [0x562c58b5afe0,0x562c58b5b020), 
+INFO: A corpus is not provided, starting from an empty corpus
+#2	INITED cov: 2 ft: 2 corp: 1/1b exec/s: 0 rss: 93Mb
+
+=================================================================
+==1844==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 64 byte(s) in 1 object(s) allocated from:
+    #0 0x562c58aed13d in operator new[](unsigned long) /home/build-user/llvm-project/compiler-rt/lib/asan/asan_new_delete.cpp:89:3
+    #1 0x562c58aef45c in LLVMFuzzerTestOneInput /mnt/data/fuzzing_memory_revision/Fuzzing_Lab_Projekti_i_Plote_4_Eksperimente/dhurata/experiment_4/memory_4.cpp:8:24
+    #2 0x562c589ab126 in fuzzer::Fuzzer::ExecuteCallback(unsigned char const*, unsigned long) /home/build-user/llvm-project/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:614:13
+    #3 0x562c589aa905 in fuzzer::Fuzzer::RunOne(unsigned char const*, unsigned long, bool, fuzzer::InputInfo*, bool, bool*) /home/build-user/llvm-project/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:516:7
+    #4 0x562c589abcb5 in fuzzer::Fuzzer::MutateAndTestOne() /home/build-user/llvm-project/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:760:19
+    #5 0x562c589ac7b5 in fuzzer::Fuzzer::Loop(std::__Fuzzer::vector<fuzzer::SizedFile, std::__Fuzzer::allocator<fuzzer::SizedFile>>&) /home/build-user/llvm-project/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:905:5
+    #6 0x562c589a35bb in fuzzer::FuzzerDriver(int*, char***, int (*)(unsigned char const*, unsigned long)) /home/build-user/llvm-project/compiler-rt/lib/fuzzer/FuzzerDriver.cpp:915:6
+    #7 0x562c589bef32 in main /home/build-user/llvm-project/compiler-rt/lib/fuzzer/FuzzerMain.cpp:20:10
+    #8 0x7f52cbf73ca7  (/lib/x86_64-linux-gnu/libc.so.6+0x29ca7) (BuildId: c495b62edadd6c356265942ec1282d98058a7b41)
+
+Direct leak of 64 byte(s) in 1 object(s) allocated from:
+    #0 0x562c58aed13d in operator new[](unsigned long) /home/build-user/llvm-project/compiler-rt/lib/asan/asan_new_delete.cpp:89:3
+    #1 0x562c58aef45c in LLVMFuzzerTestOneInput /mnt/data/fuzzing_memory_revision/Fuzzing_Lab_Projekti_i_Plote_4_Eksperimente/dhurata/experiment_4/memory_4.cpp:8:24
+    #2 0x562c589ab126 in fuzzer::Fuzzer::ExecuteCallback(unsigned char const*, unsigned long) /home/build-user/llvm-project/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:614:13
+    #3 0x562c589aa905 in fuzzer::Fuzzer::RunOne(unsigned char const*, unsigned long, bool, fuzzer::InputInfo*, bool, bool*) /home/build-user/llvm-project/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:516:7
+    #4 0x562c589ac084 in fuzzer::Fuzzer::ReadAndExecuteSeedCorpora(std::__Fuzzer::vector<fuzzer::SizedFile, std::__Fuzzer::allocator<fuzzer::SizedFile>>&) /home/build-user/llvm-project/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:812:5
+    #5 0x562c589ac4a8 in fuzzer::Fuzzer::Loop(std::__Fuzzer::vector<fuzzer::SizedFile, std::__Fuzzer::allocator<fuzzer::SizedFile>>&) /home/build-user/llvm-project/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:867:3
+    #6 0x562c589a35bb in fuzzer::FuzzerDriver(int*, char***, int (*)(unsigned char const*, unsigned long)) /home/build-user/llvm-project/compiler-rt/lib/fuzzer/FuzzerDriver.cpp:915:6
+    #7 0x562c589bef32 in main /home/build-user/llvm-project/compiler-rt/lib/fuzzer/FuzzerMain.cpp:20:10
+    #8 0x7f52cbf73ca7  (/lib/x86_64-linux-gnu/libc.so.6+0x29ca7) (BuildId: c495b62edadd6c356265942ec1282d98058a7b41)
+
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 2 allocation(s).
+INFO: to ignore leaks on libFuzzer side use -detect_leaks=0.
+
+MS: 1 ShuffleBytes-; base unit: adc83b19e793491b1c6ea0fd8b46cd9f32e592fc
+0xa,
+\012
+artifact_prefix='./'; Test unit written to /mnt/data/fuzzing_memory_revision/Fuzzing_Lab_Projekti_i_Plote_4_Eksperimente/dhurata/experiment_4/run-oktdxjr4/crash-buggy.bin
+Base64: Cg==
+stat::number_of_executed_units: 4
+stat::average_exec_per_sec:     0
+stat::new_units_added:          0
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              93

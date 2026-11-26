@@ -1,0 +1,16 @@
+UDHËZIME PËR PROJEKTIN E PLOTË
+
+Ky projekt ruan të pandryshuar kodin e Eksperimenteve 1 dhe 2, si dhe kodin ekzistues të Eksperimentit 3.
+Është shtuar Eksperimenti 4 dhe është përditësuar app.py për vizualizimin e katër eksperimenteve.
+
+Në Ubuntu WSL, nga dosja dhurata/:
+  python3 experiment_3/run_experiment.py
+  python3 scripts/run_cpp_experiment.py --experiment 4
+
+Për Streamlit:
+  python3 -m pip install -r requirements.txt
+  streamlit run app.py
+
+Shënim: Eksperimentet 3 dhe 4 matin mospërputhje me një oracle në kontrollet e gjendjes/kufijve. Nuk janë demonstrime të buffer overflow ose use-after-free real.
+
+Rezultatet e përfshira vijnë nga ekzekutimet e kryera gjatë përgatitjes së projektit dhe/ose paketës shtesë; për raportimin tuaj akademik ekzekutojini sërish në Ubuntu WSL.

@@ -1,0 +1,32 @@
+INFO: Instrumenting text_stats
+INFO: Using built-in libfuzzer
+WARNING: Failed to find function "__sanitizer_acquire_crash_state".
+WARNING: Failed to find function "__sanitizer_print_stack_trace".
+WARNING: Failed to find function "__sanitizer_set_death_callback".
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 1
+Callbacks on failure: 1
+
+ === Uncaught Python exception: ===
+ZeroDivisionError: division by zero
+Traceback (most recent call last):
+  File "/mnt/c/Users/kaltr/Desktop/Master_Kaltrina/dhurata/experiment_1/fuzz_text.py", line 21, in test_one_input
+    result = target(text)
+             ^^^^^^^^^^^^
+  File "/mnt/c/Users/kaltr/Desktop/Master_Kaltrina/dhurata/experiment_1/text_stats.py", line 3, in average_word_length_buggy
+    return sum(map(len, words)) / len(words)
+           ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+ZeroDivisionError: division by zero
+
+==1113== ERROR: libFuzzer: fuzz target exited
+SUMMARY: libFuzzer: fuzz target exited
+MS: 0 ; base unit: 0000000000000000000000000000000000000000
+
+
+artifact_prefix='./'; Test unit written to /mnt/c/Users/kaltr/Desktop/Master_Kaltrina/dhurata/experiment_1/run-959gr8a9/crash-buggy.bin
+Base64: 
+stat::number_of_executed_units: 1
+stat::average_exec_per_sec:     0
+stat::new_units_added:          0
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              43

@@ -1,0 +1,45 @@
+{
+  "experiment": 4,
+  "title": "Resource cleanup on error",
+  "language": "C++",
+  "tool": "libFuzzer",
+  "detection_mechanism": "LeakSanitizer",
+  "reported_error": "detected memory leaks",
+  "timestamp_utc": "2026-11-25T22:32:26.382209+00:00",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "compiler": "clang version 17.0.0 (https://github.com/swiftlang/llvm-project.git 10999b6d034fe318f3d56c83bddb6572593a8bb0)",
+  "seed": 1,
+  "run_limit_per_version": 10000,
+  "results": [
+    {
+      "version": "buggy",
+      "runs": 43,
+      "duration_seconds": 0.064137,
+      "exit_code": 77,
+      "log": "experiment_4/run-ey4cep61/libfuzzer-buggy.log",
+      "artifact": "experiment_4/run-ey4cep61/crash-buggy.bin",
+      "status": "Error reproduced"
+    },
+    {
+      "version": "fixed",
+      "runs": 10000,
+      "duration_seconds": 0.063996,
+      "exit_code": 0,
+      "log": "experiment_4/run-ey4cep61/libfuzzer-fixed.log",
+      "artifact": null,
+      "status": "Fuzz run completed without reported errors"
+    }
+  ],
+  "replay_log": "experiment_4/run-ey4cep61/replay.log",
+  "replay": {
+    "input_hex": "b4e0"
+  },
+  "build_logs": {
+    "buggy": "experiment_4/run-ey4cep61/build-buggy.log",
+    "fixed": "experiment_4/run-ey4cep61/build-fixed.log"
+  },
+  "reproduced": true,
+  "fixed_replay_ok": true,
+  "status": "Verifikuar",
+  "source_file": "experiment_4/resource_cleanup.cpp"
+}

@@ -1,0 +1,41 @@
+{
+  "experiment": 4,
+  "title": "Memory leak",
+  "detection_mechanism": "LeakSanitizer",
+  "reported_error": "detected memory leaks",
+  "note": "Gabim real i diagnostikuar nga sanitizer, jo OracleMismatch.",
+  "timestamp_utc": "2026-11-22T00:17:14.038992+00:00",
+  "run_count": 10004,
+  "duration_seconds": 0.128787,
+  "status": "Verifikuar",
+  "compiler": "clang version 17.0.0 (https://github.com/swiftlang/llvm-project.git 10999b6d034fe318f3d56c83bddb6572593a8bb0)",
+  "seed": 1,
+  "run_limit_per_version": 10000,
+  "results": [
+    {
+      "version": "buggy",
+      "runs": 4,
+      "duration_seconds": 0.064407,
+      "exit_code": 77,
+      "log": "experiment_4/run-oktdxjr4/libfuzzer-buggy.log",
+      "artifact": "experiment_4/run-oktdxjr4/crash-buggy.bin",
+      "status": "Gabim memorie i zbuluar dhe riprodhuar"
+    },
+    {
+      "version": "fixed",
+      "runs": 10000,
+      "duration_seconds": 0.06438,
+      "exit_code": 0,
+      "log": "experiment_4/run-oktdxjr4/libfuzzer-fixed.log",
+      "artifact": null,
+      "status": "10 000 ekzekutime pa gabim të raportuar"
+    }
+  ],
+  "replay_log": "experiment_4/run-oktdxjr4/replay.log",
+  "build_logs": {
+    "buggy": "experiment_4/run-oktdxjr4/build-buggy.log",
+    "fixed": "experiment_4/run-oktdxjr4/build-fixed.log"
+  },
+  "reproduced": true,
+  "fixed_replay_ok": true
+}

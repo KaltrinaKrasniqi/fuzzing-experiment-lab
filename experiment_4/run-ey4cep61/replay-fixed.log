@@ -1,0 +1,11 @@
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 1724278730
+INFO: Loaded 1 modules   (4 inline 8-bit counters): 4 [0x55741e0b5fd8, 0x55741e0b5fdc), 
+INFO: Loaded 1 PC tables (4 PCs): 4 [0x55741e0b5fe0,0x55741e0b6020), 
+/mnt/data/fuzz_advanced_work/Fuzzing_Lab_Project/Experiment/experiment_4/run-ey4cep61/fuzz-fixed: Running 1 inputs 1 time(s) each.
+Running: /mnt/data/fuzz_advanced_work/Fuzzing_Lab_Project/Experiment/experiment_4/run-ey4cep61/crash-buggy.bin
+Executed /mnt/data/fuzz_advanced_work/Fuzzing_Lab_Project/Experiment/experiment_4/run-ey4cep61/crash-buggy.bin in 0 ms
+***
+*** NOTE: fuzzing was not performed, you have only
+***       executed the target code on a fixed set of inputs.
+***

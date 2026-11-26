@@ -1,0 +1,11 @@
+VERIFIKIMI I PËRPUTHJES SË KODIT DHE REZULTATEVE
+
+- Eksperimentet 1 dhe 2 janë ruajtur nga ZIP-i Fuzzing_Lab_Project(3).zip.
+- Eksperimentet 3 dhe 4, JSON-et, log-et, artefaktet dhe skriptet janë marrë nga
+  Fuzzing_Lab_Project_Perditsuar_ASan_LSan.zip, që përmban memory_3.cpp dhe memory_4.cpp.
+- Rezultatet e eksperimenteve 3/4 i përkasin ekzekutimeve të arkivuara në Linux/Clang.
+  Bashkimi i skedarëve NUK është një riekzekutim i ri i fuzzer-ave.
+- Përdorni Ubuntu WSL për riekzekutimin dhe ruajtjen e rezultateve të reja.
+- Dashboard-i app.py është ruajtur nga Fuzzing_Lab_Project(3).zip; testimi i tij
+  në makinën tuaj duhet të bëhet pas këtij bashkimi.
+- 10,000 ekzekutime pa gabim nuk provojnë mungesën e të gjitha gabimeve.

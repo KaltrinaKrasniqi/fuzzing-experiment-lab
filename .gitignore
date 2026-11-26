@@ -1,0 +1,28 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Streamlit runtime
+.streamlit/secrets.toml
+
+# Local run history
+run_history/
+
+# Temporary files
+*.tmp
+*.log.bak
+.DS_Store
+Thumbs.db
+
+# Compiled executables
+*.exe
+*.obj
+*.o
+
+# Editor files
+.vscode/
+.idea/

@@ -1,0 +1,53 @@
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 1
+INFO: Loaded 1 modules   (9 inline 8-bit counters): 9 [0x560c310e0fd8, 0x560c310e0fe1), 
+INFO: Loaded 1 PC tables (9 PCs): 9 [0x560c310e0fe8,0x560c310e1078), 
+INFO:        1 files found in /mnt/data/fuzz_advanced_work/Fuzzing_Lab_Project/Experiment/experiment_3/run-zu3wk8iv/corpus-fixed
+INFO: seed corpus: files: 1 min: 12b max: 12b total: 12b rss: 93Mb
+#2	INITED cov: 3 ft: 3 corp: 1/12b exec/s: 0 rss: 93Mb
+#5	NEW    cov: 4 ft: 4 corp: 2/18b lim: 12 exec/s: 0 rss: 93Mb L: 6/12 MS: 3 ChangeBinInt-ShuffleBytes-EraseBytes-
+#17	NEW    cov: 5 ft: 5 corp: 3/26b lim: 12 exec/s: 0 rss: 93Mb L: 8/12 MS: 2 ChangeBit-EraseBytes-
+#34	REDUCE cov: 5 ft: 5 corp: 3/25b lim: 12 exec/s: 0 rss: 93Mb L: 7/12 MS: 2 ChangeBinInt-EraseBytes-
+#41	REDUCE cov: 5 ft: 5 corp: 3/23b lim: 12 exec/s: 0 rss: 93Mb L: 10/10 MS: 2 CopyPart-EraseBytes-
+#43	REDUCE cov: 5 ft: 5 corp: 3/20b lim: 12 exec/s: 0 rss: 93Mb L: 4/10 MS: 2 InsertByte-EraseBytes-
+#44	REDUCE cov: 5 ft: 5 corp: 3/19b lim: 12 exec/s: 0 rss: 93Mb L: 5/10 MS: 1 EraseBytes-
+#80	REDUCE cov: 5 ft: 5 corp: 3/18b lim: 12 exec/s: 0 rss: 93Mb L: 4/10 MS: 1 EraseBytes-
+#83	REDUCE cov: 6 ft: 6 corp: 4/29b lim: 12 exec/s: 0 rss: 93Mb L: 11/11 MS: 3 CrossOver-ChangeBit-ChangeBit-
+#89	REDUCE cov: 7 ft: 7 corp: 5/31b lim: 12 exec/s: 0 rss: 93Mb L: 2/11 MS: 1 EraseBytes-
+#97	REDUCE cov: 7 ft: 7 corp: 5/26b lim: 12 exec/s: 0 rss: 93Mb L: 6/10 MS: 3 ChangeBinInt-ChangeBinInt-EraseBytes-
+#123	REDUCE cov: 7 ft: 7 corp: 5/25b lim: 12 exec/s: 0 rss: 93Mb L: 5/10 MS: 1 EraseBytes-
+#125	REDUCE cov: 7 ft: 7 corp: 5/24b lim: 12 exec/s: 0 rss: 93Mb L: 3/10 MS: 2 ChangeBit-EraseBytes-
+#264	REDUCE cov: 7 ft: 7 corp: 5/23b lim: 12 exec/s: 0 rss: 93Mb L: 3/10 MS: 4 ChangeBinInt-CrossOver-CopyPart-EraseBytes-
+#281	REDUCE cov: 7 ft: 7 corp: 5/22b lim: 12 exec/s: 0 rss: 93Mb L: 1/10 MS: 2 ShuffleBytes-EraseBytes-
+#455	REDUCE cov: 7 ft: 8 corp: 6/31b lim: 12 exec/s: 0 rss: 93Mb L: 9/10 MS: 4 InsertRepeatedBytes-InsertByte-CrossOver-CMP- DE: "\002\000\000\000\000\000\000\000"-
+#607	REDUCE cov: 7 ft: 8 corp: 6/28b lim: 12 exec/s: 0 rss: 93Mb L: 6/10 MS: 2 CrossOver-EraseBytes-
+#743	REDUCE cov: 7 ft: 8 corp: 6/26b lim: 12 exec/s: 0 rss: 93Mb L: 4/10 MS: 1 EraseBytes-
+#883	REDUCE cov: 8 ft: 9 corp: 7/38b lim: 12 exec/s: 0 rss: 93Mb L: 12/12 MS: 5 CopyPart-InsertByte-EraseBytes-PersAutoDict-CopyPart- DE: "\002\000\000\000\000\000\000\000"-
+#1085	REDUCE cov: 8 ft: 10 corp: 8/48b lim: 12 exec/s: 0 rss: 93Mb L: 10/12 MS: 2 ChangeBit-InsertRepeatedBytes-
+#1091	REDUCE cov: 8 ft: 10 corp: 8/47b lim: 12 exec/s: 0 rss: 93Mb L: 9/12 MS: 1 CrossOver-
+#1335	REDUCE cov: 8 ft: 10 corp: 8/46b lim: 12 exec/s: 0 rss: 93Mb L: 9/12 MS: 4 EraseBytes-EraseBytes-InsertByte-CMP- DE: "\007\000\000\000\000\000\000\000"-
+#1589	REDUCE cov: 8 ft: 10 corp: 8/45b lim: 12 exec/s: 0 rss: 93Mb L: 8/12 MS: 4 InsertByte-CopyPart-ChangeBit-CrossOver-
+#1610	REDUCE cov: 8 ft: 10 corp: 8/44b lim: 12 exec/s: 0 rss: 93Mb L: 7/12 MS: 1 EraseBytes-
+#1872	REDUCE cov: 8 ft: 10 corp: 8/43b lim: 12 exec/s: 0 rss: 93Mb L: 4/12 MS: 2 CopyPart-EraseBytes-
+#1979	REDUCE cov: 8 ft: 10 corp: 8/42b lim: 12 exec/s: 0 rss: 93Mb L: 3/12 MS: 2 ChangeByte-EraseBytes-
+#2493	REDUCE cov: 8 ft: 10 corp: 8/41b lim: 15 exec/s: 0 rss: 93Mb L: 6/12 MS: 4 InsertByte-ShuffleBytes-InsertByte-EraseBytes-
+#2542	REDUCE cov: 8 ft: 11 corp: 9/53b lim: 15 exec/s: 0 rss: 93Mb L: 12/12 MS: 4 CMP-InsertRepeatedBytes-EraseBytes-ShuffleBytes- DE: "\003\000\000\000\000\000\000\000"-
+#2546	REDUCE cov: 8 ft: 11 corp: 9/51b lim: 15 exec/s: 0 rss: 93Mb L: 10/12 MS: 4 CMP-CopyPart-ShuffleBytes-EraseBytes- DE: "y\000\000\000\000\000\000\000"-
+#2639	REDUCE cov: 8 ft: 11 corp: 9/48b lim: 15 exec/s: 0 rss: 93Mb L: 7/12 MS: 3 ChangeBinInt-CopyPart-EraseBytes-
+#2850	REDUCE cov: 8 ft: 11 corp: 9/46b lim: 15 exec/s: 0 rss: 93Mb L: 5/12 MS: 1 EraseBytes-
+#4435	REDUCE cov: 9 ft: 12 corp: 10/69b lim: 30 exec/s: 0 rss: 93Mb L: 23/23 MS: 5 PersAutoDict-EraseBytes-ChangeBit-ShuffleBytes-CopyPart- DE: "\003\000\000\000\000\000\000\000"-
+#5110	REDUCE cov: 9 ft: 12 corp: 10/67b lim: 32 exec/s: 0 rss: 93Mb L: 21/21 MS: 5 CopyPart-CopyPart-ChangeBinInt-InsertByte-EraseBytes-
+#9357	REDUCE cov: 9 ft: 12 corp: 10/66b lim: 32 exec/s: 0 rss: 93Mb L: 8/21 MS: 2 ChangeBit-EraseBytes-
+#10000	DONE   cov: 9 ft: 12 corp: 10/66b lim: 32 exec/s: 0 rss: 93Mb
+###### Recommended dictionary. ######
+"\002\000\000\000\000\000\000\000" # Uses: 185
+"\007\000\000\000\000\000\000\000" # Uses: 172
+"\003\000\000\000\000\000\000\000" # Uses: 149
+"y\000\000\000\000\000\000\000" # Uses: 128
+###### End of recommended dictionary. ######
+Done 10000 runs in 0 second(s)
+stat::number_of_executed_units: 10000
+stat::average_exec_per_sec:     0
+stat::new_units_added:          33
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              93

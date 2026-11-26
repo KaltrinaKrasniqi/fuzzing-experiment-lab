@@ -1,0 +1,41 @@
+INFO: Instrumenting reward_points
+INFO: Using built-in libfuzzer
+WARNING: Failed to find function "__sanitizer_acquire_crash_state".
+WARNING: Failed to find function "__sanitizer_print_stack_trace".
+WARNING: Failed to find function "__sanitizer_set_death_callback".
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 1
+INFO: A corpus is not provided, starting from an empty corpus
+#2	INITED cov: 9 ft: 9 corp: 1/1b exec/s: 0 rss: 42Mb
+#4	NEW    cov: 10 ft: 13 corp: 2/2b lim: 1 exec/s: 0 rss: 42Mb L: 1/1 MS: 2 ShuffleBytes-ChangeBit-
+#6	NEW    cov: 10 ft: 17 corp: 3/3b lim: 1 exec/s: 0 rss: 42Mb L: 1/1 MS: 2 CrossOver-ChangeByte-
+#8	NEW    cov: 10 ft: 18 corp: 4/4b lim: 1 exec/s: 0 rss: 42Mb L: 1/1 MS: 2 CrossOver-ChangeBinInt-
+#10	NEW    cov: 10 ft: 21 corp: 5/5b lim: 1 exec/s: 0 rss: 42Mb L: 1/1 MS: 2 CrossOver-ChangeByte-
+#15	NEW    cov: 10 ft: 23 corp: 6/6b lim: 1 exec/s: 0 rss: 42Mb L: 1/1 MS: 5 ShuffleBytes-ShuffleBytes-ChangeBit-CrossOver-ChangeBinInt-
+#21	NEW    cov: 10 ft: 24 corp: 7/7b lim: 1 exec/s: 0 rss: 42Mb L: 1/1 MS: 1 ChangeBit-
+#23	NEW    cov: 10 ft: 25 corp: 8/8b lim: 1 exec/s: 0 rss: 42Mb L: 1/1 MS: 2 CopyPart-ChangeBit-
+#53	NEW    cov: 10 ft: 27 corp: 9/9b lim: 1 exec/s: 0 rss: 42Mb L: 1/1 MS: 5 CopyPart-CrossOver-CrossOver-ShuffleBytes-ChangeBit-
+#97	NEW    cov: 10 ft: 30 corp: 10/10b lim: 1 exec/s: 0 rss: 42Mb L: 1/1 MS: 4 CrossOver-ChangeBit-ShuffleBytes-ChangeBinInt-
+#111	NEW    cov: 10 ft: 31 corp: 11/11b lim: 1 exec/s: 0 rss: 42Mb L: 1/1 MS: 4 CrossOver-CopyPart-CopyPart-ChangeBinInt-
+#117	NEW    cov: 10 ft: 34 corp: 12/12b lim: 1 exec/s: 0 rss: 42Mb L: 1/1 MS: 1 ChangeBit-
+#338	NEW    cov: 10 ft: 36 corp: 13/13b lim: 1 exec/s: 0 rss: 42Mb L: 1/1 MS: 1 ChangeByte-
+
+ === Uncaught Python exception: ===
+OracleMismatch: items=3, actual=3, expected=4
+Traceback (most recent call last):
+  File "/mnt/c/Users/kaltr/Desktop/Master_Kaltrina/dhurata/experiment_2/fuzz_points.py", line 21, in test_one_input
+    raise OracleMismatch(f"items={items}, actual={actual}, expected={expected}")
+OracleMismatch: items=3, actual=3, expected=4
+
+==1142== ERROR: libFuzzer: fuzz target exited
+SUMMARY: libFuzzer: fuzz target exited
+MS: 1 ChangeBit-; base unit: 067d5096f219c64b53bb1c7d5e3754285b565a47
+0x3,
+\003
+artifact_prefix='./'; Test unit written to /mnt/c/Users/kaltr/Desktop/Master_Kaltrina/dhurata/experiment_2/run-qqfdh05m/crash-buggy.bin
+Base64: Aw==
+stat::number_of_executed_units: 429
+stat::average_exec_per_sec:     0
+stat::new_units_added:          12
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              42

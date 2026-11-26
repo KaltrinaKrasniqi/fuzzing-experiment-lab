@@ -1,0 +1,8 @@
+Input hex: 0a
+buggy: exit_code=77; sanitizer_error=True; verified=True
+--- sanitizer excerpt ---
+==1851==ERROR: LeakSanitizer: detected memory leaks
+SUMMARY: AddressSanitizer: 64 byte(s) leaked in 1 allocation(s).
+fixed: exit_code=0; sanitizer_error=False; verified=True
+--- sanitizer excerpt ---
+

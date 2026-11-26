@@ -1,0 +1,3 @@
+Input: b'' (0 bytes)
+Buggy: ZeroDivisionError: division by zero
+Fixed: 0.0
