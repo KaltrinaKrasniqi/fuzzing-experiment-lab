@@ -1,18 +1,25 @@
-<p align="center">
-  <img src="up_emblem_cover_crop.png" alt="University of Prishtina emblem" width="130">
-</p>
+<table>
+  <tr>
+    <td width="145" align="center" valign="middle">
+      <img src="up_emblem_cover_crop.png" alt="University of Prishtina emblem" width="120">
+    </td>
+    <td valign="middle">
+      <strong>University of Prishtina</strong><br>
+      <a href="https://fiek.uni-pr.edu/">Faculty of Electrical and Computer Engineering</a><br>
+      Computer and Software Engineering — Master's Programme<br>
+      <strong>Course:</strong> Software Design and Analysis<br>
+      <strong>Instructor:</strong> Prof. Ass. Dr. Dhuratë Hyseni
+    </td>
+  </tr>
+</table>
 
 # Fuzzing Experiment Lab
 
-This repository contains a **small educational fuzzing case study** prepared for the course **Software Design and Analysis**.
-It connects:
+**Academic case study · Four controlled fuzzing experiments**
 
-- **Paper A**: the general fuzzing model and taxonomy by **Manès et al.**
-- **Paper B**: the practical developer challenges during fuzzing reported by **Nourry et al.**
-- **Our lab**: four controlled experiments implemented in Python and C++
+This repository presents an educational fuzz testing laboratory using **Python/Atheris** and **C++/libFuzzer**, with AddressSanitizer and LeakSanitizer for memory-related errors. It explores the technical fuzzing model described by **Manès et al. (Paper A)** alongside the developer challenges discussed by **Nourry et al. (Paper B)**.
 
-The goal is **not** to benchmark Python vs. C++, and **not** to reproduce the original papers in full.
-Instead, the project demonstrates how fuzzing can automatically generate inputs, reveal failures, replay them, and verify a corrected version.
+The experiments illustrate input generation, failure detection, replay, and verification after a fix. They are **not** a benchmark comparing languages or fuzzers, nor a full reproduction of either paper's empirical results.
 
 ---
 
@@ -209,4 +216,4 @@ DOI: 10.1145/3611668
 **Prepared by:** Kaltrina Krasniqi  
 **Course:** Software Design and Analysis  
 **Instructor:** Prof. Ass. Dr. Dhuratë Hyseni  
-**Institution:** Faculty of Electrical and Computer Engineering, Master, University of Prishtina
+**Institution:** Faculty of Electrical and Computer Engineering, University of Prishtina
